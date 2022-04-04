@@ -1,1 +1,4 @@
-"# Group3Project" 
+Csapattagok:
+        Molnár Bendegúz
+        Ványik Alex
+        Schosz András
