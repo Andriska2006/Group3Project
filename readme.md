@@ -1,4 +1,6 @@
 Csapattagok:
-        Molnár Bendegúz: űrlap
-        Ványik Alex: elrendezés
-        Schosz András: felépítés   
+       - Molnár Bendegúz: űrlap
+       
+       - Ványik Alex: elrendezés
+        
+       - Schosz András: felépítés   
