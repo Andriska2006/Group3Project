@@ -5,13 +5,146 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
     <title>Jelentkezés</title>
 
 </head>
 <body>
-    
+    <div class="container "> 
+        <!-- navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-danger my-1" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="" width="50" height="50" class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active"  href="index.html">Főoldal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active"  href="kapcsolatok.html">Kapcsolat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active"  href="rolunk.html">Rólunk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active"  href="jelentkezes.html">Jelentkezés</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
+         <!-- carousel -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+             <div class="carousel-inner">
+                <div class="carousel-item active mb-5">
+                  <img src="/img/01.png" class="d-block w-100" alt="...">
+                     </div>
+                     <div class="carousel-item mb-5">
+                       <img src="/img/02.png" class="d-block w-100" alt="...">
+
+                     </div>
+             <div class="carousel-item mb-5">
+                  <img src="/img/03.png" class="d-block w-100" alt="...">
+                 </div>
+             </div>
+                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Previous</span>
+                    </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Next</span>
+                  </button>
+                 </div>
+                    
+                 <!-- jelentkezés -->
+                 <h1>Jelentkezés</h1>
+                 <form action="https://jedlikinfo.jedlik.eu/post_gyakorlas.php" method="post">
+                     <fieldset>
+                         <legend>Regisztrációs adatok</legend>
+                     <div>
+                         <label for="teljesnev">Vezetéknév:</label>
+                         <input type="text" name="vezeteknev" id="vezeteknev" placeholder="Adja meg a Vezeték nevét" required class="kotelezo">
+                     </div>
+                     <div>
+                        <label for="teljesnev">Keresztnév:</label>
+                        <input type="text" name="teljesnev" id="teljesnev" placeholder="Adja meg a teljes nevét" required class="kotelezo">
+                    </div>
+                     <div>
+                         <label for="Email">Email cím:</label>
+                         <input type="email" name="email" id="Email" placeholder="Adja meg az email címét" required class="kotelezo">
+
+                     </div>
+
+                     <div>
+                         <label for="jelszo">Lakcím:</label>
+                         <input type="password" name="lakcim" id="lakcim" required class="kotelezo">
+                     </div>
+                     <div>
+                         <label for="telefon" >Telefonszám:</label>
+                         <input type="tel" name="telefon" id="telefon" placeholder="12-123-12-12" pattern="+36-[0-9]{2}.[0-9]" required class="kotelezo">
+                     </div>
+                     <div>
+                         <label for="datum">Születési dátum:</label>
+                         <input type="date" name="datum" id="datum">
+                     </div>
+                     <div>
+                         <label for="magassag">Magasság:</label>
+                         <input type="number" name="magassag" id="magassag" min="100" max="250" step="10">
+                     </div>
+                     <div>
+                        <label for="elfogad">A jelentkezéssel elfogadom a szabályzatot.</label>
+                 <input type="checkbox" checked name="elfogad" id="elfogad" value="elfogadva">
+                 
+                     </div>
+                     <div>
+                        <label for="vegzettseg">Nem:</label>
+                        <select name="vegzettseg" id="vegzettseg" >
+                           <option value="1">Nő</option> 
+                           <option value="2" selected>Férfi</option>
+                           
+                        </select>
+                    </div>
+                     <div>
+                         <label for="uzenet"></label>
+                         <textarea name="uzenet" id="uzenet" cols="30" rows="10">
+                         </textarea>
+                     </div>
+                     <div>
+                         <label for="vegzettseg">Végzettség</label>
+                         <select name="vegzettseg" id="vegzettseg" >
+                            <option value="1">nincs</option> 
+                            <option value="2">alapfok</option>
+                             <option value="3">középfok</option>
+                             <option value="4" selected>felsőfok</option>
+                             <option value="5">túlzófok</option>
+                         </select>
+                     </div>
+
+                     <div>
+                        <a href="koszonjuk.html"><input type="submit" value="Jelentkezés"></a>
+                         <input type="reset" value="Visszaállítás">
+                     </div>
+                 </fieldset>
+                 </form>
+                
+                 <!-- Footer -->
+
+     <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+        <div class="card-body bg-dark" id="footer1">
+         
+          <a href="#top" class="btn btn-light " id="footer2">Visszaugrás a tetejére</a>
+        </div>
+      </div>
+      <div class="col-lg-4"></div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

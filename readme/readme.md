@@ -5,3 +5,5 @@ Csapattagok:
        - Ványik Alex: elrendezés
         
        - Schosz András: felépítés   
+
+ 
