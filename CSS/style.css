@@ -70,4 +70,16 @@ legend {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
+.szia12{
+    font-size: 100px;
+    vertical-align: auto;
+    text-align: center;
+
+}
+.szia123{
+    font-size: 50px;
+    vertical-align: auto;
+    text-align: center;
+    color: white;
+}
 

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/CSS/style.css">
     <title>Jelentkezés</title>
 
-</head>
+</head>   
 <body>
     <div class="container "> 
         <!-- navbar -->
@@ -68,15 +68,15 @@
                          <legend>Regisztrációs adatok</legend>
                      <div>
                          <label for="teljesnev">Vezetéknév:</label>
-                         <input type="text" name="vezeteknev" id="vezeteknev" placeholder="Adja meg a Vezeték nevét" required class="kotelezo">
+                         <input type="text" name="vezeteknev" id="vezeteknev" placeholder="Adja meg a Vezetéknevét" required class="kotelezo">
                      </div>
                      <div>
                         <label for="teljesnev">Keresztnév:</label>
-                        <input type="text" name="teljesnev" id="teljesnev" placeholder="Adja meg a teljes nevét" required class="kotelezo">
+                        <input type="text" name="keresztnev" id="keresztnev" placeholder="Adja meg a Keresznevét" required class="kotelezo">
                     </div>
                      <div>
                          <label for="Email">Email cím:</label>
-                         <input type="email" name="email" id="Email" placeholder="Adja meg az email címét" required class="kotelezo">
+                         <input type="email" name="email" id="Email" placeholder="pl.: valaki@gmail.com" required class="kotelezo">
 
                      </div>
 
@@ -90,33 +90,33 @@
                      </div>
                      <div>
                          <label for="datum">Születési dátum:</label>
-                         <input type="date" name="datum" id="datum">
+                         <input type="date" name="datum" id="datum" class="kotelezo">
                      </div>
                      <div>
                          <label for="magassag">Magasság:</label>
-                         <input type="number" name="magassag" id="magassag" min="100" max="250" step="10">
+                         <input type="number" name="magassag" id="magassag" min="100" max="250" step="10" class="kotelezo">
                      </div>
                      <div>
                         <label for="elfogad">A jelentkezéssel elfogadom a szabályzatot.</label>
-                 <input type="checkbox" checked name="elfogad" id="elfogad" value="elfogadva">
+                 <input type="checkbox" checked name="elfogad" id="elfogad" value="elfogadva" >
                  
                      </div>
                      <div>
                         <label for="vegzettseg">Nem:</label>
-                        <select name="vegzettseg" id="vegzettseg" >
+                        <select name="vegzettseg" id="vegzettseg" class="kotelezo" >
                            <option value="1">Nő</option> 
                            <option value="2" selected>Férfi</option>
                            
                         </select>
                     </div>
                      <div>
-                         <label for="uzenet"></label>
-                         <textarea name="uzenet" id="uzenet" cols="30" rows="10">
+                         <label for="uzenet">Magadról:</label>
+                         <textarea name="uzenet" id="uzenet" cols="30" rows="10" class="kotelezo">
                          </textarea>
                      </div>
                      <div>
                          <label for="vegzettseg">Végzettség</label>
-                         <select name="vegzettseg" id="vegzettseg" >
+                         <select name="vegzettseg" id="vegzettseg" class="kotelezo">
                             <option value="1">nincs</option> 
                             <option value="2">alapfok</option>
                              <option value="3">középfok</option>
@@ -126,7 +126,7 @@
                      </div>
 
                      <div>
-                        <a href="koszonjuk.html"><input type="submit" value="Jelentkezés"></a>
+                        <a href="koszonjuk.html"><input type="button" value="Jelentkezés"></a>
                          <input type="reset" value="Visszaállítás">
                      </div>
                  </fieldset>
